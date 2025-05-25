@@ -1,0 +1,123 @@
+.footer {
+  background-color: var(--dark-pink);
+  color: var(--dark-gray);
+  margin-top: 8rem;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 4rem 0;
+  position: relative;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.arrow-up-link {
+  position: absolute;
+  top: -2.6rem;
+  right: 20rem;
+  background-color: var(--white);
+  padding: 1.4rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.4rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition-200ms);
+}
+
+.arrow-up-link:hover {
+  transform: scale(1.1);
+}
+
+.footer-contents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-contents__wrapper {
+  max-width: 100%;
+}
+
+.footer-contents__title {
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.footer__links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__links-title {
+  font-family: var(--secondary-font);
+  margin-bottom: 1rem;
+}
+
+.footer__links-link {
+  position: relative;
+  color: var(--dark-gray);
+  transition: var(--transition-200ms);
+}
+
+.footer__links-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.15rem;
+  background-color: var(--orange);
+  transition: var(--transition-200ms);
+  bottom: -0.2rem;
+  left: 0;
+  right: 0;
+}
+
+.footer__links-link:hover {
+  color: var(--orange);
+}
+
+.footer__links-link:hover::after {
+  width: 100%;
+}
+
+.footer-download-app {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-download-app__title {
+  margin-bottom: 1.5rem;
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+}
+
+.footer-download-app__img {
+  width: 14rem;
+  height: 4rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.footer__copy-right {
+  text-align: center;
+  margin-top: 2rem;
+}

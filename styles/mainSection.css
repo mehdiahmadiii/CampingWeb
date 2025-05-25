@@ -1,0 +1,319 @@
+.main {
+  margin-top: -6rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.main::after,
+.main::before {
+  content: "";
+  position: absolute;
+  width: 90rem;
+  height: 90rem;
+  background-size: contain;
+  z-index: -1;
+}
+.main::after {
+  background-image: url("./../images/svg/shape1.svg");
+  top: 4rem;
+  right: -20rem;
+}
+.main::before {
+  background-image: url("./../images/svg/shape2.svg");
+  bottom: 90rem;
+  left: -20rem;
+}
+/* 
+
+===================
+  services section
+===================
+
+*/
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.service {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  width: 26rem;
+  height: 26rem;
+  text-align: center;
+  flex-grow: 1;
+  box-shadow: var(--box-shadow);
+}
+
+.service__img {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+}
+
+.service__title {
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+}
+
+.service__caption {
+  max-width: 29rem;
+  min-width: 27rem;
+  width: 100%;
+}
+/* 
+
+=======================
+  Destinations section
+=======================
+
+*/
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 8rem;
+}
+
+.destinations__img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.destinations__title {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  color: var(--dark-gray);
+  text-align: center;
+  min-width: 26rem;
+  max-width: 40rem;
+  width: 100%;
+  height: 10rem;
+}
+
+.destinations__places {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+}
+
+.place {
+  max-width: 32rem;
+  width: 100%;
+  height: 44rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  text-align: center;
+  flex-grow: 1;
+  position: relative;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition-200ms);
+}
+
+.place:hover {
+  transform: translateY(-1rem);
+}
+
+.place__img {
+  display: block;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.place__like {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.place__like-img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+
+.place__price-text {
+  margin-top: -5rem;
+  padding: 1rem 3rem;
+  font-family: var(--primary-font-md);
+  font-size: 1.4rem;
+  background-color: var(--white);
+  color: var(--orange);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.place__title {
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+  color: var(--dark-gray);
+  width: 20rem;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.place__caption {
+  max-width: 27rem;
+  width: 100%;
+  color: var(--dark-gray);
+}
+
+.place__link {
+  background-color: var(--light-gray-200);
+  color: var(--dark-gray);
+  font-family: var(--primary-font-md);
+}
+
+.place__link:hover {
+  background-color: var(--dark-gray);
+  color: var(--light-gray-200);
+}
+
+.destinations__link {
+  background-color: transparent;
+  color: var(--orange);
+  border: 0.1rem solid var(--orange);
+  flex-grow: 0;
+}
+
+.destinations__link:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+/* 
+
+=====================
+  newspaper section
+=====================
+
+*/
+.newsPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  background-color: var(--dark-pink);
+  border-radius: 2rem;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 8rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.newsPaper::before {
+  content: "";
+  position: absolute;
+  background: url("./../images/svg/shape3.svg") no-repeat center left;
+  background-size: contain;
+  z-index: -1;
+  width: auto;
+  height: auto;
+  left: -15rem;
+  top: -4rem;
+  bottom: -4rem;
+  right: 0;
+}
+
+.newsPaper__right-section {
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.newsPaper__title {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  color: var(--dark-gray);
+}
+
+.newsPaper__caption {
+  font-family: var(--primary-font-md);
+  color: var(--dark-gray);
+  max-width: 40rem;
+}
+
+.newsPaper-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.newsPaper-input__input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.newsPaper-input__icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.6rem;
+  padding: 0.6rem 1rem;
+  background-color: var(--orange);
+  color: var(--light-gray-200);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+}
+
+.newsPaper-input__icon-img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsPaper__left-section {
+  max-width: 40rem;
+  height: 100%;
+}
+
+.newsPaper__left-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

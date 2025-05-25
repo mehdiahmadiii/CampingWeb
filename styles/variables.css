@@ -1,0 +1,15 @@
+:root {
+  --light-gray-200: #d2d2d2;
+  --light-gray-300: #8d8d8d;
+  --dark-gray: #3b3735;
+  --white: #fff;
+  --orange: #e76f51;
+  --dark-pink: #f8e1db;
+  --pink: #faf4f2;
+  --transition-200ms: all 200ms ease-in-out;
+  --transition-500ms: all 500ms ease-in-out;
+  --primary-font: "Roboto Regular", Arial, Helvetica, sans-serif;
+  --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
+  --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
+  --box-shadow: 0.1rem 0.1rem 0.5rem var(--light-gray-200);
+}

@@ -1,0 +1,41 @@
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./fonts.css");
+@import url("./container.css");
+@import url("./helperClasses.css");
+@import url("./headerSection.css");
+@import url("./mainSection.css");
+@import url("./footerSection.css");
+@import url("./responsive.css");
+
+:root {
+  font-size: 62.5%; /* 10px */
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  background-color: var(--pink);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
